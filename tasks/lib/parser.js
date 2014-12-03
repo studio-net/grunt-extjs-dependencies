@@ -252,6 +252,12 @@ exports.init = function (grunt, opts) {
             addClassNames(output.dependencies, extrapolateClassNames('controller', m, output.definedName));
         }
 
+        // Parse `controller: ...` annotation (for deftjs)
+        m = getClassDefValue(node, 'controller', true);
+        if (m) {
+            addClassNames(output.dependencies, extrapolateClassNames('controller', m, output.definedName));
+        }
+
         // Parse `models: [...]` and `model: '...'` annotations
         m = getClassDefValue(node, 'models', true) || getClassDefValue(node, 'model', true);
         if (m) {
