@@ -12,7 +12,16 @@ module.exports = function (grunt) {
     grunt.registerMultiTask('extjs_dependencies', 'Uses falafel to figure out in what order to load your ExtJs app files.', function() {
         var opts = this.options(),
             doneFn = this.async(),
-            target = this.target;
+            target = this.target,
+            cachedRequired;
+        
+
+        if (opts.cache && opts.output && grunt.file.exists(opts.output)) {
+            cachedRequired = grunt.file.read(opts.output, { encoding: 'utf-8' }).split("\n");
+            grunt.config.set('extjs_dependencies_' + target, cachedRequired);
+            doneFn();
+            return;
+        }
 
         require('./lib/mapper').init(grunt, opts).done(function (mapper) {
             var numFiles, deps, required, diff;
