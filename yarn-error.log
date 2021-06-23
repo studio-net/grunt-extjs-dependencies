@@ -1,0 +1,86 @@
+Arguments: 
+  /home/cyril/.volta/tools/image/node/14.17.1/bin/node /home/cyril/.volta/tools/image/yarn/1.22.10/bin/yarn.js
+
+PATH: 
+  /home/cyril/.volta/tools/image/yarn/1.22.10/bin:/home/cyril/.volta/tools/image/node/14.17.1/bin:/home/cyril/.volta/bin:/home/cyril/.android/sdk/emulator:/opt/gradle/gradle-5.2.1/bin:/home/cyril/.android/sdk/tools/:/home/cyril/.android/sdk/platform-tools/:{/home/cyril/.yarn/bin:/home/cyril/go/bin:/home/cyril/.yarn/bin:/home/cyril/.local/bin:/home/cyril/.local/bin/tools:/home/cyril/.zfunctions:/home/cyril/.config/composer/vendor/bin:/home/cyril/.zplug/bin:/home/cyril/.cargo/bin:/home/cyril/.volta/bin:/home/cyril/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/cyril/.zplug/repos/unixorn/git-extra-commands/bin:/home/cyril/.config/composer/vendor/bin:/usr/sbin:/home/cyril/.rvm/bin:/home/data/bin:/home/cyril/.rvm/bin}:/home/cyril/.rvm/bin
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  14.17.1
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://github.com/ariya/esprima/tarball/master: Request failed "404 Not Found"
+      at ResponseError.ExtendableBuiltin (/home/cyril/.volta/tools/image/yarn/1.22.10/lib/cli.js:696:66)
+      at new ResponseError (/home/cyril/.volta/tools/image/yarn/1.22.10/lib/cli.js:802:124)
+      at Request.<anonymous> (/home/cyril/.volta/tools/image/yarn/1.22.10/lib/cli.js:67058:16)
+      at Request.emit (events.js:375:28)
+      at Request.module.exports.Request.onRequestResponse (/home/cyril/.volta/tools/image/yarn/1.22.10/lib/cli.js:141539:10)
+      at ClientRequest.emit (events.js:375:28)
+      at HTTPParser.parserOnIncomingClient (_http_client.js:647:27)
+      at HTTPParser.parserOnHeadersComplete (_http_common.js:126:17)
+      at TLSSocket.socketOnData (_http_client.js:515:22)
+      at TLSSocket.emit (events.js:375:28)
+
+npm manifest: 
+  {
+    "name": "grunt-extjs-dependencies",
+    "description": "Uses static analysis to figure out in what order to load your ExtJs app files.",
+    "version": "0.2.5",
+    "homepage": "https://github.com/cpak/grunt-extjs-dependencies",
+    "author": {
+      "name": "Christofer",
+      "email": "christoferpak@gmail.com"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/cpak/grunt-extjs-dependencies.git"
+    },
+    "bugs": {
+      "url": "https://github.com/cpak/grunt-extjs-dependencies/issues"
+    },
+    "licenses": [
+      {
+        "type": "MIT",
+        "url": "https://github.com/cpak/grunt-extjs-dependencies/blob/master/LICENSE-MIT"
+      }
+    ],
+    "main": "Gruntfile.js",
+    "engines": {
+      "node": ">= 0.8.0"
+    },
+    "scripts": {
+      "test": "grunt test"
+    },
+    "dependencies": {
+      "concat-stream": "~1.0.1",
+      "falafel": "~0.3.1",
+      "minimatch": "~0.2.12",
+      "trim": "0.0.1",
+      "promise": "~3.2.0",
+      "array-extended": "0.0.9",
+      "tmp": "0.0.21"
+    },
+    "devDependencies": {
+      "grunt-contrib-jshint": "~0.6.0",
+      "grunt-contrib-clean": "~0.4.0",
+      "grunt-contrib-nodeunit": "~0.2.0",
+      "grunt": "~0.4.1"
+    },
+    "peerDependencies": {
+      "grunt": "~0.4.1"
+    },
+    "keywords": [
+      "gruntplugin", "extjs"
+    ]
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
